@@ -18,10 +18,7 @@ To add, remove, or update movies on the page, edit the instances of the class in
 	year_released (int): The year the movie was released in theaters
 	rating (float): The movie's current rating on IMDB
 
-To alter the sort order of the movies on the page:
-
-1. Open 'fresh_tomatoes.py'
-1. Change the assignment of the variable 'criteria' on line 171.
+To alter the sort order of the movies on the page, change the second parameter in open_movies_page
 
 Available options include
 
