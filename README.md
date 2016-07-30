@@ -19,9 +19,12 @@ To add, remove, or update movies on the page, edit the instances of the class in
 	rating (float): The movie's current rating on IMDB
 
 To alter the sort order of the movies on the page:
+
 1. Open 'fresh_tomatoes.py'
 1. Change the assignment of the variable 'criteria' on line 171.
+
 Available options include
+
 *'rating' - Sort in descending order by IMDB rating.
 *'year_released' - Sort in chronological order by release year.
 
