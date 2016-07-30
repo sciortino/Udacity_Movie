@@ -25,6 +25,6 @@ To alter the sort order of the movies on the page:
 
 Available options include
 
-*'rating' - Sort in descending order by IMDB rating.
-*'year_released' - Sort in chronological order by release year.
+* 'rating' - Sort in descending order by IMDB rating.
+* 'year_released' - Sort in chronological order by release year.
 
