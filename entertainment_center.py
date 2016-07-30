@@ -1,42 +1,59 @@
 import media
 import fresh_tomatoes
-#file where class is defined
 
-godfather = media.Movie('The Godfather',
-                        'The Corleone family is up to their old antics.',
-                        'https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg',
-                        'https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=21&cad=rja&uact=8&ved=0ahUKEwjGqbmg55TOAhVGHB4KHaXeBH4QryQImwEoADAU&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D8V2k2YQEQJ4&usg=AFQjCNHguIf-sym7_l-5GgTylGE0l4MiBg&sig2=Rqi4497XEX0RKIXePeJGIQ'
-                        )
+#Optional - Unhide next line to display Movie class documentation
+#print media.Movie.__doc__
 
-blood = media.Movie("There Will Be Blood",
-                     "An oiling operation goes all wrong.",
-                     "https://upload.wikimedia.org/wikipedia/en/thumb/d/da/There_Will_Be_Blood_Poster.jpg/220px-There_Will_Be_Blood_Poster.jpg",
-                     "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=21&cad=rja&uact=8&ved=0ahUKEwjd16-i6ZTOAhWFJR4KHSQeDiMQryQIogEoADAU&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D3PXf5iSGIL4&usg=AFQjCNGyB9qqG5UXGhxCiL-twEI3ddN4HQ&sig2=28GNM54183n5VbyKhX41AQ&bvm=bv.128450091,d.dmo"
-                     )
+#Create instances of the Movie class
+godfather = media.Movie(
+    'The Godfather',
+    'The Corleone family is up to their old antics.',
+    'http://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg',
+    'http://www.youtube.com/watch?v=sY1S34973zA',
+    1972,
+    9.2)
 
-lebowski = media.Movie("The Big Lebowski",
-                     "A bowling movie.",
-                     "https://upload.wikimedia.org/wikipedia/en/3/35/Biglebowskiposter.jpg",
-                     "https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=21&cad=rja&uact=8&ved=0ahUKEwjyuN696ZTOAhVDbB4KHUVlAVoQryQImgEoADAU&url=http%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DB6s60JdiHJc&usg=AFQjCNEaVCvknrRzkEpz-87seesc29hFIQ&sig2=3sGpCMZw3Oda5lTac8JKSw"
-                     )
+blood = media.Movie(
+    "There Will Be Blood",
+    "An oiling operation goes all wrong, for some.",
+    "http://upload.wikimedia.org/wikipedia/en/thumb/d/da/There_Will_Be_Blood_Poster.jpg/220px-There_Will_Be_Blood_Poster.jpg", #NOQA
+    "http://www.youtube.com/watch?v=FeSLPELpMeM",
+    2007,
+    8.1)
 
-starwars = media.Movie("Star Wars",
-                     "The government vs wizards.",
-                     "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/694px-Star_Wars_Logo.svg.png",
-                     "www.youtube.com/watch?v=9MqVeJeDfio"
-                     )
+lebowski = media.Movie(
+    "The Big Lebowski",
+    "A bowling movie.",
+    "http://upload.wikimedia.org/wikipedia/en/3/35/Biglebowskiposter.jpg",
+    "http://www.youtube.com/watch?v=cd-go0oBF4Y",
+    1998,
+    8.2)
 
-graduate = media.Movie("The Graduate",
-                     "The first day of the rest of Dustin's life.",
-                     "https://upload.wikimedia.org/wikipedia/en/8/8b/Graduateposter67.jpg",
-                     "https://www.youtube.com/watch?v=hsdvhJTqLak"
-                     )
+starwars = media.Movie(
+    "Star Wars",
+    "The rebels take on the Empire.",
+    "http://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg",
+    "http://www.youtube.com/watch?v=1g3_CFmnU7k",
+    1977,
+    8.7)
 
-blues = media.Movie("Blues Brothers",
-                     "Band practice.",
-                     "https://upload.wikimedia.org/wikipedia/en/f/f5/BluesBrothers.jpg",
-                     "https://www.youtube.com/watch?v=UPbymWrqXGc"
-                     )
+graduate = media.Movie(
+    "The Graduate",
+    "A recent college graduate gets attention from an older woman.",
+    "http://upload.wikimedia.org/wikipedia/en/8/8b/Graduateposter67.jpg",
+    "http://www.youtube.com/watch?v=XxJDOkr_UhE",
+    1967,
+    8.0)
+
+blues = media.Movie(
+    "Blues Brothers",
+    "This band is on a mission from God.",
+    "http://upload.wikimedia.org/wikipedia/en/a/ae/Bluesbrothersmovieposter.jpg",
+    "http://www.youtube.com/watch?v=asM2-YAMWxg",
+    1980,
+    7.9)
+
+#Pass movies into a list and open the movie page.
 
 movies = [godfather, blood, lebowski, starwars, graduate, blues]
 fresh_tomatoes.open_movies_page(movies)
