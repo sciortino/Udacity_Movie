@@ -56,4 +56,7 @@ blues = media.Movie(
 #Pass movies into a list and open the movie page.
 
 movies = [godfather, blood, lebowski, starwars, graduate, blues]
-fresh_tomatoes.open_movies_page(movies)
+
+#Options for filter criteria: 'year_released','rating'
+fresh_tomatoes.open_movies_page(movies, 'rating')
+

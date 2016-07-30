@@ -168,12 +168,11 @@ def create_movie_tiles_content(movies, criteria):
     return content
 
 
-def open_movies_page(movies):
+def open_movies_page(movies, criteria):
     # Create or overwrite the output file
     output_file = open('fresh_tomatoes.html', 'w')
 
     # Reorder the movies
-    criteria = 'rating' #Options: 'year_released','rating'
     movies = reorder_movies(movies, criteria)
     
     # Replace the movie tiles placeholder generated content
